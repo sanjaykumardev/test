@@ -6,7 +6,7 @@ const cors = require("cors")
 port = 3000
 
 app.use(express.json());
-app.use(cors());
+app.use(cors({origin: "https://test-six-omega-19.vercel.app/"}));
 
 
 
