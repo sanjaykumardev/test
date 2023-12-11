@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Employee form Registor</title>
+  <!-- <link rel="stylesheet" href="/frontend/body.css"> -->
+  <!-- <link rel="stylesheet" href="/frontend/details.css">
+  <link rel="stylesheet" href="/frontend/table.css"> -->
+</head>
+<body>
+
+
+
+  <div class="continer">
+    <h3 class="title">EMPLOYEE  DETIALS FORM</h3>
+    <form id="employeeForm" action="/submitForm" method="post">
+
+      <div  id="error" class="box">
+        <div clsss="left">
+          <label class="heading" for="employeeName">Employee Name:</label>
+        <input class="text" type="text" id="employeeName" name="employeename" required><br>
+       
+
+        <label class="heading" for="dob">Date of Birth:</label>
+        <input  class="text" type="date" id="dob" name="dob" required><br>
+          
+
+        <label class="heading" for="designation">Designation:</label>
+        <input class="text" type="text" id="designation" name="designation" required><br>
+        </div>
+        
+
+    <div  id="error" class="right">
+      <label  class="heading" for="salary">Salary:</label>
+      <input  class="text" type="number" id="salary" name="salary" required><br>
+  
+      <label class="heading" for="experience">Experience on Department:</label>
+      <input class="text" type="text" id="experience" name="experience_department" required><br>
+  
+      <label class="heading" for="employeeId">Employee ID:</label>
+      <input type="text" class="text" id="employeeId" name="employee_id" required><br>
+    </div> 
+
+    <div id="error" class="last">
+      <label class="heading" for="phoneNumber">Phone Number:</label>
+     <input class="text" type="tel" id="phoneNumber" placeholder="+91" name="phone_number" required><br>
+ 
+     <label  class="heading" for="address">Address:</label>
+     <input class="text type="text" id="address" name="address" required><br>
+ 
+     <label  class="heading" for="email">Email:</label>
+     <input  class="text" type="email" id="email" name="email" required><br>
+
+   </div>
+</div>
+<button type="button" class="button" onclick="handleSubmit()">Submit</button>   
+ 
+
+  
+  <div class="table">
+    <table id="employeeTable">
+      <thead>
+          <tr>
+              <th>Employee Name</th>
+              <th>Date of Birth</th>
+              <th>Designation</th>
+              <th>Salary</th>
+              <th>Experience on Department</th>
+              <th>Employee ID</th>
+              <th>Phone Number</th>
+              <th>Address</th>
+              <th>Email</th>
+          </tr>
+      </thead>
+     
+  </table>
+  </div> 
+  </form>
+    </div>
+<script src="./script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</body>
+</html>
