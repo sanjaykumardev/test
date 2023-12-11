@@ -12,12 +12,12 @@ app.use(cors({origin: "https://test-six-omega-19.vercel.app/"}));
 
 // connect to server to database 
 const connection  = mysql.createConnection({
-  user:"root",
-  host:"localhost",
-  password:"sanjay007",
-  database:"employeeform"
-
+  host:"bhwk0kuh7dhyearjwvok-mysql.services.clever-cloud.com",
+  user:"ulgf6hscgxrztcuh",
+  password:"ddUyywwNIaBuF3WudbSW",
+  database:"bhwk0kuh7dhyearjwvok"
 });
+
 
 
 // fetch the data to backend 
