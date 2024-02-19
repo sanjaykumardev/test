@@ -4,134 +4,90 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Poppins', sans-serif; 
 }
-
 
 body {
   min-height: 100vh;
   display: flex;
   align-items: center;
-  justify-self: center;
+  justify-content: center;
   background-color: #4070f4;
+  font-family: 'Poppins', sans-serif;
 }
 
-.continer {
+.container {
   background-color: white;
-  max-width: 990px;
-  width: 100%;
+  max-width: 500px;
+  width: 90%;
   border-radius: 6px;
-  position: relative;
-  margin: 85px;
   box-shadow: 0px 0px 10px #888888;
-
+  padding: 20px;
+  margin: 20px; /* Added margin for gap in the middle */
 }
 
 .title {
   text-align: center;
-  padding-bottom: 20px;
-
+  margin-bottom: 20px;
 }
 
 .text {
-  margin-top: 3px;
-  display: flex;
-  padding-top: 3px;
-  padding-bottom: 3px;
-  margin-top: 2px;
-  box-shadow: 1px 0px 5px #888888;
-  outline: none;
+  margin-top: 10px;
+  padding: 10px;
   border-radius: 6px;
-  border-width: 0px;
-  padding-left: 10px;
-  max-width: 500px;
-  width: 250px;
+  border: 1px solid #ccc;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .box {
   display: flex;
-  margin-left: 30px;
+  justify-content: space-between;
+  margin-top: 20px;
 }
 
-.left.right {
-  width: 50%;
-  margin-top: 10px;
-}
-
-.right {
-
-  margin-left: 90px;
-}
-
-.left {
-
-  margin-left: 90px;
+.left, .right {
+  flex: 1;
 }
 
 .heading {
   font-size: smaller;
   color: red;
   border-radius: 30px;
+  margin-top: 10px;
 }
 
-
 .table {
-  margin-left: 123px;
-  margin-top: 70px;
-  margin-bottom: 10px;
-  width: 40px;
+  margin: 30px 0;
+  width: 100%;
 }
 
 table {
   border-collapse: collapse;
-  margin-top: 0px;
   background-color: white;
   box-shadow: 1px 0px 5px #888888;
+  width: 100%;
 }
 
-table,
-th,
-td {
+th, td {
   border: 1px solid black;
-  padding: 15px;
+  padding: 10px;
   text-align: center;
-  font-size: xx-small;
+  font-size: small;
 }
-
 
 .button {
-  margin-right: 100px;
-  margin-left: 100px;
-  padding-left: 80px;
-  padding-right: 80px;
-  background-color: rgb(33, 92, 210);
-  font-style: light;
-  font-weight: 200;
-  border-width: 1px;
+  margin: 30px auto;
+  padding: 10px 30px;
+  background-color: #4070f4;
+  color: white;
+  border: none;
   border-radius: 6px;
   outline: none;
-  color: white;
-  max-width: 500px;
-  width: 250px;
-  padding-top: 5px;
-  padding-bottom: 5px;
-  border: none;
-  box-shadow: 0px 0px 5px gray;
-  margin-left: 37%;
-  margin-top: 30px;
+  cursor: pointer;
+  display: block;
+  max-width: 200px;
 }
 
-button:hover {
-  background-color: #74a3d4;
-}
-
-
-
-.last {
-  margin-left: 90px;
-}
-
-
-.box2 {
-  display: flex;
+.button:hover {
+  background-color: #3366cc;
 }
