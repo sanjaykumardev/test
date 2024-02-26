@@ -36,8 +36,8 @@ function handleSubmit() {
 
     // Sending data to server
     axios.post(URL + '/post', data)
-        .then(response => {
-            console.log('Data sent to the server:', response.data);
+        .then(res => {
+            console.log('Data sent to the server:', res.data);
             // Display the received data as a table row
         })
         .catch(error => {

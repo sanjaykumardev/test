@@ -9,7 +9,7 @@ const cors = require("cors")
 const port = 3000;
 // use case for the connection frontend
 app.use(express.json());
-app.use(cors())
+app.use(cors());
 
 // origin: "https://test-six-omega-19.vercel.app/"}));
 
