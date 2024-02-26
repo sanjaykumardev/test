@@ -61,6 +61,7 @@ app.put('/employees/update/:employee_id', (req, res) => {
           return;
       }
       res.status(200).send('Employee updated successfully');
+      console.error('Employee updated successfully', results);
   });
 });
 
