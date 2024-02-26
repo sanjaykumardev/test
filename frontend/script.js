@@ -17,9 +17,7 @@ function handleSubmit() {
     if (!employeenmae || !dob || !designation || !employee_id || !phone_number || !email) {
         alert("Please fill in all required fields:");
         return;
-    }
-
-
+    };
     // URL for the server to connect to the database:
     const URL = "http://localhost:3000";
 

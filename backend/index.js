@@ -1,10 +1,13 @@
+// import cases 
+
 const express = require("express")
 const app = express();
 const mysql = require("mysql2")
 const cors = require("cors")
 
-const port = 3000
-
+// port to connect to server 
+const port = 3000;
+// use case for the connection frontend
 app.use(express.json());
 app.use(cors())
 
@@ -17,7 +20,6 @@ const connection  = mysql.createConnection({
   password:"sanjay007",
   database:"employeeform"
 });
-
 
 
 // fetch the data to backend 

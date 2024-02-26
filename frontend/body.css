@@ -16,7 +16,7 @@ body {
 }
 
 .container {
-  background-color: white;
+  background-color:black;
   max-width: 500px;
   width: 90%;
   border-radius: 6px;
@@ -28,6 +28,7 @@ body {
 .title {
   text-align: center;
   margin-bottom: 20px;
+  font-size: x-larger;
 }
 
 .text {
@@ -50,6 +51,8 @@ body {
 .left,
 .right {
   flex: 4;
+  margin-left: 20px;
+  margin-right: 20px;
 
 }
 
@@ -58,6 +61,7 @@ body {
   color: red;
   border-radius: 30px;
   margin-top: 10px;
+  font-size: larger;
 }
 
 .table {
@@ -67,8 +71,8 @@ body {
 
 table {
   border-collapse: collapse;
-  background-color: white;
-  box-shadow: 1px 0px 5px #888888;
+  background-color: #3366cc;
+  box-shadow: 0px 2px 4px #000000;
   width: 100%;
 }
 
@@ -76,8 +80,10 @@ th,
 td {
   border: 1px solid black;
   padding: 10px;
+  background-color: #4070f4;
   text-align: center;
   font-size: small;
+  color: white
 }
 
 .button {
@@ -91,8 +97,18 @@ td {
   cursor: pointer;
   display: block;
   max-width: 200px;
+  font-size: larger;
 }
 
 .button:hover {
   background-color: #3366cc;
+}
+
+.nextbutton {
+  padding: 10px 40px;
+  background-color: #4070f4;
+  border-radius: 10px;
+  border-width: 0;
+  color: aliceblue;
+  font-size: larger;
 }
